@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: cornflowerblue;
+  height: 50px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+  margin: 20px;
+}
+
+.header_nav {
+  font-size: 1.5rem;
+}
+
+.header_logo {
+  display: inline;
+  margin-left: auto;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: azure;
+}

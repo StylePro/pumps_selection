@@ -1,0 +1,14 @@
+.pump_name {
+  color: dodgerblue;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.pump_select {
+  height: 30px;
+  border-radius: 2px;
+  margin-left: 10px;
+  border: 1px solid cornflowerblue;
+  text-align: center;
+}
