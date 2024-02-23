@@ -10,8 +10,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainLayOut />}>
-          <Route path="pump_selection" element={<PumpSelection />} />
-          <Route path="guide" element={<Guide />} />
+          <Route path="/pump_selection" element={<PumpSelection />} />
+          <Route path="/guide" element={<Guide />} />
         </Route>
       </Routes>
     </BrowserRouter>

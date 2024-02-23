@@ -1,27 +1,14 @@
-import { useState } from 'react';
-import styles from './PumpSelection.module.css';
+import TypeOfPump from '../typePump/TypePump';
+import { useAppSelector } from '../hooks/hooks';
+import PumpCharacteristics from '../pumpCharacteristics/PumpCharacteristics';
 
 const PumpSelection = () => {
-  const [typePump, setTypePump] = useState('');
+  const pump = useAppSelector((state) => state.pump.currentPump);
   return (
-    <div className={styles.pump_name}>
-      <label>
-        Выберите насос:
-        <select
-          value={'' || typePump}
-          onChange={(e) => setTypePump(e.target.value)}
-          className={styles.pump_select}
-        >
-          <option value="" disabled>
-            select
-          </option>
-          <option value="ГХ">ГХ</option>
-          <option value="ГХМ">ГХМ</option>
-          <option value="ГХИ">ГХИ</option>
-          <option value="ГХС">ГХС</option>
-        </select>
-      </label>
-    </div>
+    <>
+      <TypeOfPump />
+      {pump && <PumpCharacteristics />}
+    </>
   );
 };
 

@@ -5,10 +5,20 @@
   margin-left: 10px;
 }
 
-.pump_select {
+.pump_select,
+.pump_button {
   height: 30px;
   border-radius: 2px;
   margin-left: 10px;
   border: 1px solid cornflowerblue;
   text-align: center;
+}
+
+.pump_button:hover {
+  cursor: pointer;
+  background-color: #6c8cd5;
+}
+
+.pump_select:hover {
+  cursor: pointer;
 }
